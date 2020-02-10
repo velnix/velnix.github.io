@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Velnix</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Velnix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2020 12:00:53 +0530</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 10 Feb 2020 12:00:53 +0530</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Velnix is a company focused on System administration and Devops related technologies. We do have 12 years of industry experience.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Fri, 31 Jan 2020 20:38:30 +0530</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
