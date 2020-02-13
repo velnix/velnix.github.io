@@ -6,18 +6,19 @@
     <description>Recent content on Velnix</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Feb 2020 13:59:38 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 00:28:59 +0530</lastBuildDate>
     
 	<atom:link href="https://www.velnix.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Projects</title>
-      <link>https://www.velnix.com/projects/</link>
-      <pubDate>Mon, 10 Feb 2020 13:59:38 +0530</pubDate>
+      <title>Imdb Movie Fercher</title>
+      <link>https://www.velnix.com/projects/imdb-movie-fercher/</link>
+      <pubDate>Fri, 14 Feb 2020 00:28:59 +0530</pubDate>
       
-      <guid>https://www.velnix.com/projects/</guid>
-      <description>Projects from Velnix</description>
+      <guid>https://www.velnix.com/projects/imdb-movie-fercher/</guid>
+      <description>Command line tool to search and get details about the movies
+https://github.com/velnix/imdb-movie-fetcher</description>
     </item>
     
     <item>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Velnix</title>
+    <link>https://www.velnix.com/projects/</link>
+    <description>Recent content in Projects on Velnix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Feb 2020 00:28:59 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.velnix.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Imdb Movie Fercher</title>
+      <link>https://www.velnix.com/projects/imdb-movie-fercher/</link>
+      <pubDate>Fri, 14 Feb 2020 00:28:59 +0530</pubDate>
+      
+      <guid>https://www.velnix.com/projects/imdb-movie-fercher/</guid>
+      <description>Command line tool to search and get details about the movies
+https://github.com/velnix/imdb-movie-fetcher</description>
+    </item>
+    
+  </channel>
+</rss>
