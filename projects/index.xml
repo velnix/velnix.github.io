@@ -6,11 +6,7 @@
     <description>Recent content in Projects on Velnix</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Dec 2012 00:28:59 +0530</lastBuildDate>
-    
-	<atom:link href="https://www.velnix.com/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 20 Dec 2012 00:28:59 +0530</lastBuildDate><atom:link href="https://www.velnix.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Imdb Movie Fercher</title>
       <link>https://www.velnix.com/projects/imdb-movie-fercher/</link>
