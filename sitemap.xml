@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://www.velnix.com/categories/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/tags/cheatsheet/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/tags/commandline/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/categories/commandline/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/tags/ffmpeg/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/categories/ffmpeg/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/posts/overlay-transparent-logo-video-ffmpeg/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/posts/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/tags/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
+    <loc>https://www.velnix.com/</loc>
+    <lastmod>2023-06-20T14:40:39+05:30</lastmod>
+  </url><url>
     <loc>https://www.velnix.com/about/</loc>
     <lastmod>2020-02-10T12:00:53+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.velnix.com/posts/my-first-post/</loc>
     <lastmod>2020-01-31T20:38:30+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.velnix.com/posts/</loc>
-    <lastmod>2020-01-31T20:38:30+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.velnix.com/</loc>
-    <lastmod>2020-01-31T20:38:30+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.velnix.com/projects/imdb-movie-fercher/</loc>
     <lastmod>2012-12-20T00:28:59+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.velnix.com/projects/</loc>
     <lastmod>2012-12-20T00:28:59+05:30</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.velnix.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.velnix.com/tags/</loc>
-  </url>
-  
 </urlset>

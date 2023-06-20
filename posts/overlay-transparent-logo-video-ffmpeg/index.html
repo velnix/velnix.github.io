@@ -10,26 +10,26 @@
     <meta name="keywords" content="blog,developer,sysadmin,linux">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My First Post"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Overlay a transparent logo on a given video file using FFMPEG"/>
+<meta name="twitter:description" content="Overlay a transparent logo on a given video file using FFMPEG"/>
 
-    <meta property="og:title" content="My First Post" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="Overlay a transparent logo on a given video file using FFMPEG" />
+<meta property="og:description" content="Overlay a transparent logo on a given video file using FFMPEG" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.velnix.com/posts/my-first-post/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-01-31T20:38:30+05:30" />
-<meta property="article:modified_time" content="2020-01-31T20:38:30+05:30" />
+<meta property="og:url" content="https://www.velnix.com/posts/overlay-transparent-logo-video-ffmpeg/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-20T14:40:39+05:30" />
+<meta property="article:modified_time" content="2023-06-20T14:40:39+05:30" />
 
 
     
-      <base href="https://www.velnix.com/posts/my-first-post/">
+      <base href="https://www.velnix.com/posts/overlay-transparent-logo-video-ffmpeg/">
     
     <title>
-  My First Post · Velnix
+  Overlay a transparent logo on a given video file using FFMPEG · Velnix
 </title>
 
     
-      <link rel="canonical" href="https://www.velnix.com/posts/my-first-post/">
+      <link rel="canonical" href="https://www.velnix.com/posts/overlay-transparent-logo-video-ffmpeg/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -109,29 +109,85 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">My First Post</h1>
+          <h1 class="title">Overlay a transparent logo on a given video file using FFMPEG</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2020-01-31T20:38:30&#43;05:30'>
-                January 31, 2020
+              <time datetime='2023-06-20T14:40:39&#43;05:30'>
+                June 20, 2023
               </time>
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              0-minute read
+              2-minute read
             </span>
           </div>
-          
-          
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://www.velnix.com/categories/ffmpeg/">ffmpeg</a>
+      <span class="separator">•</span>
+    <a href="https://www.velnix.com/categories/commandline/">commandline</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://www.velnix.com/tags/cheatsheet/">cheatsheet</a>
+      <span class="separator">•</span>
+    <a href="https://www.velnix.com/tags/ffmpeg/">ffmpeg</a>
+      <span class="separator">•</span>
+    <a href="https://www.velnix.com/tags/commandline/">commandline</a></div>
+
         </div>
       </header>
 
       <div>
         
-        
+        <p>Following FFMPEG command will accoumplish the same. Lets analyse the command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -i video.mp4 -i img.jpg -filter_complex <span style="color:#79740e">&#34;[1]scale=50:50,format=argb,geq=r=&#39;r(X,Y)&#39;:a=&#39;0.3*alpha(X,Y)&#39;[tranimg];[0][tranimg]overlay=W-w-10:H-h-10&#34;</span> output.mp4
+</span></span></code></pre></div><ul>
+<li><code>-i</code> - input files. Here there are two inputs, one video and one image.</li>
+<li><code>-filter_complex</code> - It is for adding complex filters. In this case</li>
+</ul>
+<p><code>[1]scale=50:50,format=argb,geq=r='r(X,Y)':a='0.3*alpha(X,Y)'[tranimg];[0][tranimg]overlay=W-w-10:H-h-10</code></p>
+<ul>
+<li>Let check the applied filter.</li>
+</ul>
+<p><code>[1]scale=50:50,format=argb,geq=r='r(X,Y)':a='0.3*alpha(X,Y)'[tranimg]</code></p>
+<p>In this case 1 means the second input, ie the image(First input is 0). All the following filters are applied on it.</p>
+<ul>
+<li>
+<p><code>scale=50:50</code> - It scales the image to 50x50</p>
+</li>
+<li>
+<p><code>format=argb</code> - changes the format to RGB</p>
+</li>
+<li>
+<p><code>geq=r='r(X,Y)':a='0.3*alpha(X,Y)'</code> - It is for changing the opacity of the image. All geq requires an RGB or luminance expression to let the filter know that it is RGB or YUV. In this case setting red component to itself. Then changing the opacity of each pixel to 0.3 of itself.</p>
+</li>
+<li>
+<p><code>tranimg</code> - Its just a name given to output</p>
+</li>
+</ul>
+<p>Now the overlay function overlays the output tranimg on video file at the given x and y co-ordinate.</p>
+<p><code>[0][tranimg]overlay=W-w-10:H-h-10</code></p>
+<p>The image is already scaled to 50x50. Now lets check the size of the video frame.</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ffmpeg -i video.mp4 2&gt;&amp;1 | egrep -o &#34;[0-9]+x[0-9]+ &#34;
+</span></span><span style="display:flex;"><span>720x480 
+</span></span></code></pre></div><p>Video is 720x480, so the image will be overlayed at 660,420</p>
+<ul>
+<li>W-w-10 ie 720-50-10=660</li>
+<li>H-h-10 ie 480-50-10=420</li>
+</ul>
+<p>considering image size is 50x50. All 4 points of image will be at co-ordinates :</p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>X    Y
+</span></span><span style="display:flex;"><span>660 420
+</span></span><span style="display:flex;"><span>660 470
+</span></span><span style="display:flex;"><span>710 420
+</span></span><span style="display:flex;"><span>710 470
+</span></span></code></pre></div><p>If we plot that, we can see the image comes at lower right corner of the video.</p>
+<p><img src="https://www.velnix.com/images/dot-graph.png" alt="dot graph"></p>
+
       </div>
 
 

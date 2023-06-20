@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Velnix</title>
-    <link>https://www.velnix.com/posts/</link>
-    <description>Recent content in Posts on Velnix</description>
+    <title>cheatsheet on Velnix</title>
+    <link>https://www.velnix.com/tags/cheatsheet/</link>
+    <description>Recent content in cheatsheet on Velnix</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jun 2023 14:40:39 +0530</lastBuildDate><atom:link href="https://www.velnix.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jun 2023 14:40:39 +0530</lastBuildDate><atom:link href="https://www.velnix.com/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overlay a transparent logo on a given video file using FFMPEG</title>
       <link>https://www.velnix.com/posts/overlay-transparent-logo-video-ffmpeg/</link>
@@ -17,15 +17,6 @@
 ffmpeg -i video.mp4 -i img.jpg -filter_complex &amp;#34;[1]scale=50:50,format=argb,geq=r=&amp;#39;r(X,Y)&amp;#39;:a=&amp;#39;0.3*alpha(X,Y)&amp;#39;[tranimg];[0][tranimg]overlay=W-w-10:H-h-10&amp;#34; output.mp4 -i - input files. Here there are two inputs, one video and one image. -filter_complex - It is for adding complex filters. In this case [1]scale=50:50,format=argb,geq=r=&#39;r(X,Y)&#39;:a=&#39;0.3*alpha(X,Y)&#39;[tranimg];[0][tranimg]overlay=W-w-10:H-h-10
 Let check the applied filter. [1]scale=50:50,format=argb,geq=r=&#39;r(X,Y)&#39;:a=&#39;0.3*alpha(X,Y)&#39;[tranimg]
 In this case 1 means the second input, ie the image(First input is 0). All the following filters are applied on it.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://www.velnix.com/posts/my-first-post/</link>
-      <pubDate>Fri, 31 Jan 2020 20:38:30 +0530</pubDate>
-      
-      <guid>https://www.velnix.com/posts/my-first-post/</guid>
-      <description></description>
     </item>
     
   </channel>
