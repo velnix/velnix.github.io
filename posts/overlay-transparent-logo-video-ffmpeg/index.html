@@ -187,7 +187,12 @@
 </span></span><span style="display:flex;"><span>710 470
 </span></span></code></pre></div><p>If we plot that, we can see the image comes at lower right corner of the video.</p>
 <p><img src="https://www.velnix.com/images/dot-graph.png" alt="dot graph"></p>
-
+<p>For the transparency colorchannelmixer option also works. So you can replace :</p>
+<p><code>geq=r='r(X,Y)':a='0.3*alpha(X,Y)'</code></p>
+<p>with</p>
+<p><code>colorchannelmixer=aa=0.3</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#3c3836;background-color:#fbf1c7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -i video.mp4 -i img.jpg -filter_complex <span style="color:#79740e">&#34;[1]scale=50:50,format=rgba,colorchannelmixer=aa=0.2[tranimg];[0][tranimg]overlay=W-w-10:H-h-10&#34;</span> -c:v libx265 -c:a aac output.mp4
+</span></span></code></pre></div>
       </div>
 
 
